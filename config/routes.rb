@@ -6,9 +6,10 @@ Rails.application.routes.draw do
   get "home/about"=>"homes#about", as: 'about'
 
   resources :books, only: [:index,:show,:edit,:create,:destroy,:update]
-  resource :users, only: [:update, :edit, :index, :show]
+  resources :users, only: [:update, :edit, :index, :show]
   
    resources :favorites, only: [:create, :destroy]
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
  end
+ 
