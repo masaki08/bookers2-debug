@@ -20,7 +20,7 @@ class BooksController < ApplicationController
     else
       @user = current_user
       @books = Book.all
-      render :idex
+      render :index
     end
   end
 
