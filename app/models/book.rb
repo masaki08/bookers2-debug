@@ -21,5 +21,5 @@ class Book < ApplicationRecord
     else
       @book = Book.all
     end
-  end
+   end
 end
